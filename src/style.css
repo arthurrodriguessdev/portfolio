@@ -59,7 +59,21 @@ body{
     color: var(--cor-primaria);
 }
 
+/* Div botões home */
+.home div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
 .btn-entrar-contato{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
     text-decoration: none;
     color: #fff;
     font-weight: 600;
@@ -73,6 +87,36 @@ body{
 
 .btn-entrar-contato:hover{
     background-color: var(--background-color-btn-hover);
+}
+
+.btn-download-curriculo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-weight: 600;
+    text-align: center;
+    background-color: transparent;
+    border-radius: var(--radius-btn);
+    border: 2px solid var(--cor-primaria);
+    padding: var(--padding-btn);
+    transition: var(--transition-hover-btn);
+    width: 100%;
+}
+
+.btn-download-curriculo:hover{
+    background-color: var(--background-color-btn-hover);
+    color: #fff;
+    border: 2px solid var(--background-color-btn-hover);
+}
+
+.btn-entrar-contato i,
+.btn-download-curriculo i{
+    font-size: 16px;
 }
 
 .subtitle-home{
@@ -173,4 +217,56 @@ body{
 
 .links-projeto a:hover{
     background-color: var(--background-color-btn-hover);
+}
+
+/* Sobre Mim */
+.sobre{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--cor-terciaria);
+    padding: var(--padding-section);
+    align-items: center;  
+    color: #fff;
+}
+
+.card-foto-minha{
+    position: relative;
+    width: 100%;
+    height: 340px;
+    max-width: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card-foto-minha img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.texto-cargo{
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.texto-cargo span{
+    color: var(--cor-primaria);
+}
+
+.texto-sobre-mim{
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.5;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Tecnologias DENTRO do texto de "Sobre Mim" */
+.texto-sobre-mim span{
+    font-weight: 600px;
+    color: var(--cor-primaria);
+    font-weight: 600;
 }
