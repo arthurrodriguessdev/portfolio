@@ -14,10 +14,13 @@ body{
 :root{
     --cor-primaria: #8398FF;
     --cor-secundaria: #191F3D;
+    --cor-terciaria: #12162B;
+
     --radius-btn: 5px;
     --padding-btn: 8px;
     --transition-hover-btn: all 0.2s ease;
     --background-color-btn-hover: #6779cf;
+    --padding-section: 50px;
 }
 
 .top-bar{
@@ -41,7 +44,7 @@ body{
     flex-direction: column;
     gap: 30px;
     background-color: var(--cor-secundaria);
-    padding: 50px;
+    padding: var(--padding-section);
     align-items: center;
 }
 
@@ -76,4 +79,98 @@ body{
     color: #fff;
     font-size: 16px;
     text-align: center;
+}
+
+/* Comum Seções */
+.titulo-secao{
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 2px solid var(--cor-primaria);
+    align-self: flex-start;
+    padding-bottom: 8px;
+}
+
+/* Seção de Projetos */
+.projetos{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--cor-terciaria);
+    padding: var(--padding-section);
+    align-items: center;  
+    color: #fff; 
+}
+
+.card-projeto{
+    position: relative;
+    width: 100%;
+    height: 240px;
+    max-width: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card-projeto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.overlay-projeto{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.886);
+    opacity: 0;
+    transition: 0.3s ease;
+    text-align: center;
+    padding: 20px;
+}
+
+.overlay-projeto h3{
+    font-size: 18px;
+}
+
+.overlay-projeto p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.card-projeto:hover img{
+    transform: scale(1.05);
+}
+
+.card-projeto:hover{
+    border: 1px solid #fff
+}
+
+.card-projeto:hover .overlay-projeto{
+    opacity: 1;
+}
+
+.links-projeto{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.links-projeto a{
+    text-decoration: none;
+    background-color: var(--cor-primaria);
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    transition: all 0.2s ease;
+    font-size: 12px;
+}
+
+.links-projeto a:hover{
+    background-color: var(--background-color-btn-hover);
 }
