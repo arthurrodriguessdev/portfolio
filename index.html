@@ -10,12 +10,21 @@
 <body>
 <header>
     <div class="top-bar">
-        <button><i class="fa-solid fa-bars"></i></button>
+        <i class="fa-solid fa-bars" id="icone-menu"></i>    
     </div>
+
+    <nav class="menu-mobile">
+        <a href="#home">Home</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#sobre">Sobre Mim</a>
+        <a href="#tecnologias">Tecnologias</a>
+        <a href="#contatos">Contatos</a>
+    </nav>
+    
 </header>
 <main>
     <div class="main-content">
-        <section class="home">
+        <section class="home" id="home">
             <h1 class="title-home">Olá, eu sou o <span>Arthur Rodrigues!</span></h1>
             <p class="subtitle-home">Desenvolvedor Full-Stack | Python | C# | React</p>
 
@@ -33,7 +42,7 @@
         </section>
 
         <!-- Seção de Projetos -->
-        <section class="projetos">
+        <section class="projetos" id="projetos">
             <h2 class="titulo-secao">Projetos</h2>
 
             <!-- Cards Projetos -->
@@ -81,7 +90,7 @@
         </section>
 
         <!-- Seção de Sobre Mim -->
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <h2 class="titulo-secao">Sobre Mim</h2>
             <div class="card-foto-minha">
                 <img src="src/IMG_9848.jpg" alt="">
@@ -94,7 +103,7 @@
         </section>
 
         <!-- Tecnologias e Habilidades -->
-        <section class="tecnologias">
+        <section class="tecnologias" id="tecnologias">
             <h2 class="titulo-secao">Tecnologias</h2>
 
             <!-- Card de Front-end -->
@@ -215,7 +224,7 @@
         </section>
 
         <!-- Contatos -->
-        <section class="contatos">
+        <section class="contatos" id="contatos">
             <h2 class="titulo-secao">Contatos</h2>
             <div class="card-contatos">
                 <div>
@@ -285,19 +294,19 @@
 <footer>
     <div class="card-footer">
         <div class="card-icones-footer">
-            <div class="icone-footer">
+            <div class="">
                 <a href="https://github.com/arthurrodriguessdev" target="_blank" class="icone-footer">
                     <i class="fa-brands fa-github"></i>
                 </a>
             </div>
 
-            <div class="icone-footer">
+            <div class="">
                 <a href="https://www.linkedin.com/in/arthur-rodriguesx/" target="_blank" class="icone-footer">
                     <i class="fa-brands fa-linkedin-in"></i>
                 </a>
             </div>
 
-            <div class="icone-footer">
+            <div class="">
                 <a href="mailto:arthurrodrigues1801r@gmail.com" class="icone-footer">
                     <i class="fa-solid fa-envelope"></i>
                 </a>
@@ -311,5 +320,7 @@
         </p>
     </div>
 </footer>
+
+<script src="scripts/menu_mobile.js"></script>
 </body>
 </html>

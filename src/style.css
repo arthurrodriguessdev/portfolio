@@ -11,6 +11,14 @@ body{
     padding-top: 40px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    scroll-margin-top: 40px;
+}
+
 :root{
     --cor-primaria: #8398FF;
     --cor-secundaria: #191F3D;
@@ -24,7 +32,10 @@ body{
 }
 
 .top-bar{
-    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    background-color: var(--cor-terciaria);
     height: 40px;
     position: fixed;
     width: 100%;
@@ -32,6 +43,45 @@ body{
     left: 0;
     z-index: 1000;
     border-bottom: 2px solid var(--cor-primaria);
+}
+
+.top-bar i{
+    color: #fff;
+    padding: 10px;
+}
+
+.menu-mobile{
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: var(--cor-terciaria);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-30px);
+    transition: opacity .3s ease, transform .3s ease, visibility .3s;
+}
+
+.menu-mobile.ativo{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.menu-mobile a{
+    text-decoration: none;
+    transition: all 0.2s ease;
+    color: #fff;
+}
+
+.menu-mobile a:hover{
+    color: var(--background-color-btn-hover);
 }
 
 .main-content{
