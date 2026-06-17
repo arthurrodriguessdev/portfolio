@@ -348,3 +348,63 @@ body{
     color: #fff;
     font-weight: 600;
 }
+
+/* Seção de contatos */
+.contatos{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--cor-secundaria);
+    padding: var(--padding-section);
+    align-items: center;  
+    color: #fff;
+}
+
+.card-contatos{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+    background-color: var(--cor-terciaria);
+    padding: 25px; 
+}
+
+.titulo-card-contatos{
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.subtitulo-card-contatos{
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.2;
+    max-width: 800px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.card-icone-contato{
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.card-icone-contato img{
+    height: 35px;
+    width: 35px;
+}
+
+.link-card-contato{
+    text-decoration: none;
+    color: #fff;
+}
