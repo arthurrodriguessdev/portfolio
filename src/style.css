@@ -364,7 +364,7 @@ body{
     display: flex;
     flex-direction: column;
     position: relative;
-    gap: 5px;
+    gap: 20px;
     width: 100%;
     height: 100%;
     max-width: 450px;
@@ -386,25 +386,91 @@ body{
     max-width: 800px;
     text-align: left;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .card-icone-contato{
     padding: 10px;
-    background-color: transparent;
+    background-color: rgba(255, 0, 0, 0.03);
     border-radius: 10px;
     border: 1px solid #fff;
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
 }
 
-.card-icone-contato img{
-    height: 35px;
-    width: 35px;
+.icone-contato{
+    text-align: center;
+    background-color: var(--cor-primaria);
+    padding: 10px;
+    border-radius: 5px;
+    width: 40px;
+}
+
+.dados-contato{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.dados-contato h4{
+    font-size: 16px;
+}
+
+.dados-contato p{
+    font-size: 14px;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 .link-card-contato{
     text-decoration: none;
+    color: #fff;
+}
+
+/* Footer */
+.card-footer{
+    border-top: 1px solid var(--cor-primaria);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--cor-terciaria);
+    padding: 35px 50px;
+    align-items: center;  
+    text-align: center;
+    color: #fff;
+}
+
+.card-footer span{
+    font-weight: 600;
+    color: var(--cor-primaria);
+}
+
+.card-footer p{
+    font-size: 14px;
+}
+
+.card-icones-footer{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.icone-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background: var(--cor-primaria);
+    border-radius: 50%;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    transition: .2s;
+}
+
+.icone-footer:hover{
+    transform: translateY(-3px);
+    background: var(--background-color-btn-hover);
     color: #fff;
 }
