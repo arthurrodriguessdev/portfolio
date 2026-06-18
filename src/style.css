@@ -561,7 +561,7 @@ section{
 */
 @media (min-width: 1024px){
     :root{
-        --h1-size-desk: 48px;
+        --h1-size-desk: 64px;
         --h2-size-desk: 40px;
         --p-size-desk: 24px;
         --p-size-desk-txt-grande: 20px;
@@ -623,9 +623,10 @@ section{
     }
 
     .home p{
-        font-size: var(--p-size-desk-txt-grande);
+        font-size: var(--p-size-desk);
         max-width: 600px;
         text-align: start;
+        line-height: 1.5;
     }
 
     .card-botoes-home{
@@ -635,14 +636,58 @@ section{
     }
 
     .img-home{
-        width: 550px;
-        height: 550px;
+        width: 620px;
+        height: 620px;
         object-fit: cover;
-        padding: 36px;
         border-radius: 20px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, .5);
         display: block;
-        transform: perspective(1000px) rotateY(-1deg) rotateX(2deg);
+        transition: transform .5s cubic-bezier(.22, 1, .36, 1), filter .5s ease;
+        transform:
+            perspective(1000px)
+            rotateY(-12deg)
+            rotateX(4deg);
+        filter: drop-shadow(0 25px 45px rgba(89, 47, 255, 0.408));
+        background-color: transparent;
+        animation:float 5s ease-in-out infinite;
+    }
+
+    .img-home:hover{
+        animation: none;
+        transform:
+            perspective(1400px)
+            rotateY(-4deg)
+            rotateX(1deg)
+            translateY(-8px)
+            scale(1.02);
+
+        filter: drop-shadow(0 18px 35px rgba(0,0,0,.18)) drop-shadow(0 0 30px rgba(89,47,255,.22));
+    }
+
+    @keyframes float{
+        0%{
+            transform:
+            perspective(1200px)
+            rotateY(-12deg)
+            rotateX(4deg)
+            translateY(0px);
+        }
+
+        50%{
+            transform:
+            perspective(1200px)
+            rotateY(-12deg)
+            rotateX(4deg)
+            translateY(-12px);
+        }
+
+        100%{
+            transform:
+            perspective(1200px)
+            rotateY(-12deg)
+            rotateX(4deg)
+            translateY(0px);
+        }
     }
 
     .subtitle-home{
