@@ -84,6 +84,10 @@ section{
     color: var(--background-color-btn-hover);
 }
 
+.menu-desktop{
+    display: none;
+}
+
 .main-content{
     display: flex;
     flex-direction: column;
@@ -110,11 +114,23 @@ section{
 }
 
 /* Div botões home */
-.home div{
+.card-botoes-home{
     display: flex;
     flex-direction: column;
     gap: 15px;
     width: 100%;
+}
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card-titulo-subtitulo-home{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .btn-entrar-contato{
@@ -523,4 +539,160 @@ section{
     transform: translateY(-3px);
     background: var(--background-color-btn-hover);
     color: #fff;
+}
+
+/* Ajustes mobile */
+.img-home{
+    display: none;
+}
+
+.subtitle-home-desktop{
+    display: none;
+}
+
+.todos-cards-projetos{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+/* 
+* DESKTOP
+*/
+@media (min-width: 1024px){
+    :root{
+        --h1-size-desk: 48px;
+        --h2-size-desk: 40px;
+        --p-size-desk: 24px;
+        --p-size-desk-txt-grande: 20px;
+
+        --padding-secoes-desk: 100px 180px;
+    }
+
+    .top-bar{
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .top-bar i{
+        display: none;
+    }
+
+    .menu-desktop{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .menu-desktop a{
+        text-decoration: none;
+        color: #fff;
+        font-size: var(--p-size-desk);
+        transition: all 0.2s ease;
+    }
+
+    .menu-desktop a:hover{
+        color: var(--cor-primaria);
+        transform: translateY(-3px);
+    }
+
+    /* Seção Home */
+    .home{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--padding-secoes-desk);
+    }
+
+    .home-content{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: flex-start;
+    }
+
+    .home h1{
+        font-size: var(--h1-size-desk);
+        text-align: start;
+        width: 700px;   
+    }
+
+    .home p{
+        font-size: var(--p-size-desk-txt-grande);
+        max-width: 600px;
+        text-align: start;
+    }
+
+    .card-botoes-home{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    /* .img-home{
+        width: 320px;
+        height: 320px;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        display: block;
+    } */
+
+    .subtitle-home{
+        display: none;
+    }
+
+    .subtitle-home-desktop{
+        display: block;
+        color: #fff;
+        font-size: var(--p-size-desk-txt-grande);
+    }
+
+    .btn-download-curriculo,
+    .btn-entrar-contato{
+        width: 260px;
+        padding: 15px;
+    }
+
+    .btn-entrar-contato i,
+    .btn-download-curriculo i{
+        font-size: 24px;
+    }
+
+    .projetos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .todos-cards-projetos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:40px;
+    }
+
+    .card-projeto{
+        position: relative;
+        height: 340px;
+        max-width: 500px;
+        border-radius: 10px;
+        transition: all 0.2s ease;
+    }
+
+    .card-projeto:hover{
+        transform: scale(1.08)
+    }
+
+    /* Todas as seções */
+    section {
+        padding: var(--padding-secoes-desk) !important;
+        gap: 60px !important;
+    }
+
+    section h2{
+        font-size: var(--h2-size-desk) !important;
+    }
 }

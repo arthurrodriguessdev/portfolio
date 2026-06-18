@@ -10,7 +10,14 @@
 <body>
 <header>
     <div class="top-bar">
-        <i class="fa-solid fa-bars" id="icone-menu"></i>    
+        <i class="fa-solid fa-bars" id="icone-menu"></i>  
+        <nav class="menu-desktop">
+            <a href="#home">Home</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#sobre">Sobre Mim</a>
+            <a href="#tecnologias">Tecnologias</a>
+            <a href="#contatos">Contatos</a>
+        </nav>  
     </div>
 
     <nav class="menu-mobile">
@@ -25,65 +32,91 @@
 <main>
     <div class="main-content">
         <section class="home" id="home">
-            <h1 class="title-home">Olá, eu sou o <span>Arthur Rodrigues!</span></h1>
-            <p class="subtitle-home">Desenvolvedor Full-Stack | Python | C# | React</p>
+            <div class="home-content">
+                <div class="card-titulo-subtitulo-home">
+                    <h1 class="title-home">Olá, eu sou o <span>Arthur Rodrigues!</span></h1>
+                    <p class="subtitle-home">Desenvolvedor Full-Stack | Python | C# | React</p>
+                    <p class="subtitle-home-desktop">
+                        Desenvolvedor Full-Stack focado em desenvolver aplicações
+                        robustas, escaláveis e com uma interface funcional.
+                    </p>
+                </div>
 
-            <div>
-                <a href="https://wa.me/5562994323945" class="btn-entrar-contato" target="_blank">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    Entrar em Contato
-                </a>
+                <div class="card-botoes-home">
+                    <a href="https://wa.me/5562994323945" class="btn-entrar-contato" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        Entrar em Contato
+                    </a>
 
-                <a href="" class="btn-download-curriculo">
-                    <i class="fa-solid fa-download"></i>
-                    Baixar Currículo
-                </a>
+                    <a href="" class="btn-download-curriculo">
+                        <i class="fa-solid fa-download"></i>
+                        Baixar Currículo
+                    </a>
+                </div>
             </div>
+
+            <img class="img-home" src="src/imagens/Design sem nome.jpg" alt="">
         </section>
 
         <!-- Seção de Projetos -->
         <section class="projetos" id="projetos">
             <h2 class="titulo-secao">Projetos</h2>
 
-            <!-- Cards Projetos -->
-            <div class="card-projeto">
-                <img src="src/Captura de tela 2026-06-15 215935.png" alt="Sistema de Agendamentos">
+            <div class="todos-cards-projetos">
+                <!-- Cards Projetos -->
+                <div class="card-projeto">
+                    <img src="src/Captura de tela 2026-06-15 215935.png" alt="Sistema de Agendamentos">
 
-                <div class="overlay-projeto">
-                    <h3>Sistema de Agendamentos</h3>
-                    <p>Sistema desenvolvido para realizar a gestão de tarefas. dinefineifndenfie</p>
+                    <div class="overlay-projeto">
+                        <h3>Sistema de Agendamentos</h3>
+                        <p>Sistema desenvolvido para realizar a gestão de tarefas. dinefineifndenfie</p>
 
-                    <div class="links-projeto">
-                        <a href="#">GitHub</a>
-                        <a href="#">Demo</a>
+                        <div class="links-projeto">
+                            <a href="#">GitHub</a>
+                            <a href="#">Demo</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card-projeto">
-                <img src="src/Captura de tela 2026-06-15 215935.png" alt="Sistema de Agendamentos">
+                <div class="card-projeto">
+                    <img src="src/Captura de tela 2026-06-15 215935.png" alt="Sistema de Agendamentos">
 
-                <div class="overlay-projeto">
-                    <h3>Sistema de Agendamentos</h3>
-                    <p>Django • PostgreSQL • Bootstrap</p>
+                    <div class="overlay-projeto">
+                        <h3>Sistema de Agendamentos</h3>
+                        <p>Django • PostgreSQL • Bootstrap</p>
 
-                    <div class="links-projeto">
-                        <a href="#">GitHub</a>
-                        <a href="#">Demo</a>
+                        <div class="links-projeto">
+                            <a href="#">GitHub</a>
+                            <a href="#">Demo</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card-projeto">
-                <img src="src/Captura de tela 2026-06-15 215935.png" alt="Sistema de Agendamentos">
+                <div class="card-projeto">
+                    <img src="src/Captura de tela 2026-06-15 215935.png" alt="Sistema de Agendamentos">
 
-                <div class="overlay-projeto">
-                    <h3>Sistema de Agendamentos</h3>
-                    <p>Django • PostgreSQL • Bootstrap</p>
+                    <div class="overlay-projeto">
+                        <h3>Sistema de Agendamentos</h3>
+                        <p>Django • PostgreSQL • Bootstrap</p>
 
-                    <div class="links-projeto">
-                        <a href="#">GitHub</a>
-                        <a href="#">Demo</a>
+                        <div class="links-projeto">
+                            <a href="#">GitHub</a>
+                            <a href="#">Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-projeto">
+                    <img src="src/Captura de tela 2026-06-15 215935.png" alt="Sistema de Agendamentos">
+
+                    <div class="overlay-projeto">
+                        <h3>Sistema de Agendamentos</h3>
+                        <p>Django • PostgreSQL • Bootstrap</p>
+
+                        <div class="links-projeto">
+                            <a href="#">GitHub</a>
+                            <a href="#">Demo</a>
+                        </div>
                     </div>
                 </div>
             </div>
