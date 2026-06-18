@@ -296,6 +296,12 @@ section{
     color: #fff;
 }
 
+.container-textos-sobre{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .card-foto-minha{
     position: relative;
     width: 100%;
@@ -303,6 +309,7 @@ section{
     max-width: 450px;
     overflow: hidden;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .card-foto-minha img{
@@ -316,6 +323,7 @@ section{
     color: #fff;
     font-weight: 600;
     font-size: 20px;
+    text-align: center;
 }
 
 .texto-cargo span{
@@ -556,6 +564,14 @@ section{
     gap: 35px;
 }
 
+.texto-sobre-mim-adicional-desktop{
+    display: none;
+}
+
+.btn-ver-contatos{
+    display: none;
+}
+
 /* 
 * DESKTOP
 */
@@ -633,6 +649,10 @@ section{
         display: flex;
         flex-direction: row;
         gap: 20px;
+    }
+
+    .card-botoes-home a{
+        font-size: 20px;
     }
 
     .img-home{
@@ -743,4 +763,86 @@ section{
     section h2{
         font-size: var(--h2-size-desk) !important;
     }
+
+    /* Projetos */
+    .overlay-projeto{
+        gap: 30px;
+    }
+
+    .overlay-projeto h3{
+        font-size: 26px;
+    }
+
+    .overlay-projeto p{
+        font-size: 18px;
+    }
+
+    .links-projeto{
+        gap: 25px;
+    }
+
+    .links-projeto a{
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    /* Sobre mim */
+    .container-conteudo-sobre{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 120px;
+    }
+
+    .container-textos-sobre{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .card-foto-minha{
+        height: 450px;
+        width: 100%;
+    }
+
+    .texto-cargo{
+        font-size: 32px;
+        text-align: start;
+    }
+
+    .container-textos-sobre p{
+        font-size: var(--p-size-desk-txt-grande);
+        text-align: start;
+    }
+
+    .texto-sobre-mim-adicional-desktop{
+        display: block;
+    }
+
+    .btn-ver-contatos{
+        display: block;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+        text-align: center;
+        font-size: 18px;
+        background-color: var(--cor-primaria);
+        border-radius: var(--radius-btn);
+        /* padding: var(--padding-btn); */
+        transition: var(--transition-hover-btn);
+        width: 260px;
+        padding: 15px;
+    }
+
+    .btn-ver-contatos:hover{
+        background-color: var(--background-color-btn-hover);
+    }
+
+    /* Tecnologias */
 }
