@@ -634,14 +634,16 @@ section{
         gap: 20px;
     }
 
-    /* .img-home{
-        width: 320px;
-        height: 320px;
+    .img-home{
+        width: 550px;
+        height: 550px;
         object-fit: cover;
+        padding: 36px;
         border-radius: 20px;
         box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         display: block;
-    } */
+        transform: perspective(1000px) rotateY(-1deg) rotateX(2deg);
+    }
 
     .subtitle-home{
         display: none;
