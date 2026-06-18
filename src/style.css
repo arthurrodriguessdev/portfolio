@@ -590,7 +590,7 @@ section{
     .menu-desktop a{
         text-decoration: none;
         color: #fff;
-        font-size: var(--p-size-desk);
+        font-size: 20px;
         transition: all 0.2s ease;
     }
 
@@ -606,6 +606,7 @@ section{
         justify-content: space-between;
         align-items: center;
         padding: var(--padding-secoes-desk);
+        height: 100vh !important;
     }
 
     .home-content{
