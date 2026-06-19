@@ -572,6 +572,10 @@ section{
     display: none;
 }
 
+.overlay-tecnologia{
+    display: none;
+}
+
 /* 
 * DESKTOP
 */
@@ -845,4 +849,104 @@ section{
     }
 
     /* Tecnologias */
+    .tecnologias{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 35px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .card-tecnologias{
+        width: 100%;
+        max-width: none;
+        padding: 50px;
+        border-radius: 18px;
+        background: linear-gradient(180deg,#181d36,#12162b);
+        transition: .3s;
+        box-shadow: 0 12px 30px rgba(0,0,0,.25);
+    }
+
+    .overlay-tecnologia{
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        background: var(--cor-secundaria);
+        opacity: 0;
+        transition: .3s;
+    }
+
+    .overlay-tecnologia h3{
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+    }
+
+    .overlay-tecnologia p{
+        font-size: .9rem;
+        line-height: 1.5;
+    }
+
+    .card-tecnologias:hover{
+        transform: translateY(-2px);
+        border: 2px solid var(--cor-primaria);
+        box-shadow: 0 20px 45px rgba(0,0,0,.35);
+    }
+
+    .card-icones-tecnologia{
+        gap: 50px;
+        justify-content: space-between;
+    }
+
+    .icone-mais-nome{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 250px;
+        height: 250px;
+
+        padding: 60px;
+        border-radius: 12px;
+        background: #fff;
+
+        overflow: hidden;
+    }
+
+    .icone-mais-nome:hover{
+        transform: scale(1.1);
+    }
+
+    .icone-mais-nome:hover .overlay-tecnologia{
+        opacity: 1;
+        border: solid 1px #fff;
+        border-radius: 12px;
+    }
+
+    .icone-mais-nome img{
+        width: 110px;
+        height: 110px;
+        transition: .3s;
+
+    }
+
+    .nome-tecnologia{
+        font-size: 18px;
+        color: var(--cor-terciaria);
+        font-weight: 600;
+    }
+
+    .titulo-card-tecnologias{
+        font-size: 26px;
+    }
+
+    .subtitulo-card-tecnologias{
+        font-size: var(--p-size-desk-txt-grande);
+    }
 }
