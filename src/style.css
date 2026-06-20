@@ -576,6 +576,10 @@ section{
     display: none;
 }
 
+.card-textos-atributos{
+    display: none;
+}
+
 /* 
 * DESKTOP
 */
@@ -947,6 +951,55 @@ section{
     }
 
     .subtitulo-card-tecnologias{
+        font-size: var(--p-size-desk-txt-grande);
+    }
+
+    /* Contatos */
+    .contatos{
+        width: 100%;
+    }
+    
+    .card-contatos{
+        flex-direction: row;
+        background: transparent;
+        gap: 50px;
+        height: 100%;
+        max-width: 100%;
+        border-radius: 10px;
+        background-color: var(--cor-terciaria);
+        padding: 50px; 
+        
+    }
+
+    .card-todos-contatos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .card-contatos-textos{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .card-icone-contato{
+        padding: 25px;
+        width: 450px;
+    }
+
+    .card-textos-atributos{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card-contatos-textos h3{
+        font-size: 26px;
+    }
+
+    .card-contatos-textos p{
         font-size: var(--p-size-desk-txt-grande);
     }
 }
